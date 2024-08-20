@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Border</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+<!-- Background -->
+<div class="flex min-h-screen flex-col items-center justify-center bg-black">
+
+  <!-- Button -->
+  <button class="relative overflow-hidden rounded-lg px-20 py-6">
+    
+    <!-- Button Body -->
+    <span class="absolute inset-px z-10 flex items-center justify-center rounded-lg bg-black bg-gradient-to-t from-neutral-800 text-neutral-300">Button</span>
+
+    <!-- Animated Border -->
+    <span aria-hidden class="absolute inset-0 z-0 scale-x-[2.0] blur before:absolute before:inset-0 before:top-1/2 before:aspect-square before:animate-disco before:bg-gradient-conic before:from-purple-700 before:via-red-500 before:to-amber-400" />
+    
+  </button>
+</div>
+
+</body>
+</html>
