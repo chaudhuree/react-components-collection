@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hover effect</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <ul>
+        <li class="card"><span>1</span></li>
+        <li class="card"><span>2</span></li>
+        <li class="card"><span>3</span></li>
+        <li class="card"><span>4</span></li>
+        <li class="card"><span>5</span></li>
+        <li class="card"><span>6</span></li>
+        <li class="card"><span>7</span></li>
+        <li class="card"><span>8</span></li>
+        <li class="card"><span>9</span></li>
+      </ul>
+    </main>
+
+    <script>
+      const updateCursor = ({ x, y }) => {
+        document.documentElement.style.setProperty("--x", x);
+        document.documentElement.style.setProperty("--y", y);
+      };
+
+      document.body.addEventListener("pointermove", updateCursor);
+    </script>
+  </body>
+</html>
