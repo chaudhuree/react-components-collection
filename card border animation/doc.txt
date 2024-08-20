@@ -1,0 +1,2 @@
+add the config file data in generated tailwind.config.js file
+also add the css code in index.css file

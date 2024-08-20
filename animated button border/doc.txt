@@ -1,0 +1,1 @@
+add the config file data in generated tailwind.config.js file
